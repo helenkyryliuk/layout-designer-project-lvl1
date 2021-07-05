@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Open Sans Regular';
-  src: url('../../assets/fonts/OpenSans-Regular.ttf');
+  src: url('../assets/fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Neucha Regular';
-  src: url('../../assets/fonts/Neucha-Regular.ttf');
+  src: url('../assets/fonts/Neucha-Regular.ttf');
 }
 
 :root {
@@ -69,7 +69,7 @@ section {
 
 .banner::before {
   content: "";
-  background-image: url('../../assets/images/background.png');
+  background-image: url('../assets/images/background.png');
   background-size: cover;
   position: absolute;
   top: 0px;

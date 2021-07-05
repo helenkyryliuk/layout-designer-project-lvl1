@@ -7,3 +7,8 @@ lint:
 
 deploy:
 	npx surge ./src/
+
+redeploy:
+    surge --domain cognitivebiasesinprogramming.surge.sh
+
+    
