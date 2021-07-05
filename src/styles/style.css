@@ -1,23 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('../../assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Neucha Regular';
+  src: url('../../assets/fonts/Neucha-Regular.ttf');
+}
+
+:root {
+  --primary: #fe8a02;
+  --primary-dark: #42413c;
+  --normal-dark: #2a2626;
+  --transparent-dark: #908d8b;
+  --normal-brown: #42413c;
+  --transparent-white: #d7ccc0;
+  --normal-white: #fff;
+  --normal-light: #f5f4f0;
+  --normal-blue: #1085c5;
+}
 
 body {
-  color: #2A2626;
-  font-family: "Open Sans";
-  line-height: 1.6em;
+  margin: 0;
+  color: var(--normal-dark);
+
+  font-family: "Open Sans Regular", sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Neucha";
+  font-family: "Neucha Regular", sans-serif;
   line-height: 1.2em;
 }
 
 h1 {
+  margin: 0;
+
   font-size: 75px;
 }
 
 h2 {
+  margin: 0;
+
   font-size: 60px;
 }
 
@@ -29,5 +54,122 @@ section {
   display: flex;
   justify-content: center;
   max-width: 1110px;
-  margin: 100px 0;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+
+  height: 100%;
+
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner::before {
+  content: "";
+  background-image: url('../../assets/images/background.png');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+}
+
+.title {
+  position: absolute;
+  top: 150px;
+  left: 250px;;
+}
+
+.top-banner-image {
+  /* height: 525px; */
+  position: relative;
+  width: 80%;
+  right: -450px;
+  top: 55px;
+}
+
+/* .text-block {
+  display: flex;
+} */
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--normal-brown);
+  padding: 40px 150px;
+}
+
+.flex-container > div {
+  display: flex;
+  width: 300px;
+  background-color: var(--normal-light);
+  margin: 10px 14px;
+  padding: 24px;
+  cursor: pointer;
+}
+
+.paragraph-title {
+  color: var(--primary);
+
+  font-size: 52px;
+  font-family: "Neucha Regular", sans-serif;
+}
+
+.flex-container > .paragraph-title {
+  color: var(--normal-white);
+
+  width: 350px;
+
+  font-size: 60px;
+  font-family: "Neucha Regular", sans-serif;
+
+  background-color: var(--normal-brown);
+  padding: 0;
+  margin-top: 12px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--normal-white);
+  font-weight: 600;
+  padding: 20px 20px;
+  cursor: pointer;
+  border: none;
+  font-variant: small-caps;
+}
+
+.text-primary {
+  color: var(--primary)
+}
+
+.number {
+  margin-bottom: 40px;
+
+  font-size: 64px;
+  font-family: "Neucha Regular", sans-serif;
+
+  line-height: 1;
+}
+
+.flex-columns-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-columns-container:hover:not(:first-child),
+.flex-columns-container:hover > .paragraph-title {
+  color: var(--normal-white);
+
+  background-color: var(--primary);
+}
+
+.flex-column-aligned-center {
+  display: flex;
+  justify-content: center;
 }
