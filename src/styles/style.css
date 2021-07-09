@@ -114,7 +114,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   background-color: var(--normal-brown);
-  padding: 40px 150px;
+  padding: 100px 150px;
 }
 
 .flex-container > div {
@@ -191,6 +191,7 @@ section {
 .flex-column-aligned-center {
   display: flex;
   justify-content: center;
+  margin-top: 65px;
 }
 
 .secondary-title {
