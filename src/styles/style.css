@@ -114,7 +114,12 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   background-color: var(--normal-brown);
-  padding: 100px 150px;
+
+  padding-top: 110px;
+  padding-right: 150px;
+  padding-left: 150px;
+  padding-bottom: 100px;
+
 }
 
 .flex-container > div {
