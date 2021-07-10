@@ -182,6 +182,25 @@ section {
   cursor: pointer;
 }
 
+.video-section-title {
+  margin-top: 65px;
+  margin-bottom: 23px;
+
+  text-align: center;
+}
+
+.video {
+  margin-bottom: -95px;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.video-section-background {
+  height: 110px;
+
+  background-color: #42413c;
+}
+
 .text-primary {
   color: var(--primary);
 }
