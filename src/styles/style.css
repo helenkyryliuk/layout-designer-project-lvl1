@@ -58,7 +58,7 @@ h3 {
 h4 {
   margin: 5px 10px;
 
-  color: var(--normal-white);
+  color: inherit;
 
   font-size: 14px;
   font-family: "Open Sans Regular", sans-serif;
@@ -83,7 +83,8 @@ section {
   overflow: hidden;
 }
 
-.section::before {
+.section::before,
+.section-dark::before {
   content: "";
   background-image: url('../assets/images/background.png');
   background-size: cover;
@@ -93,6 +94,19 @@ section {
   bottom: 0;
   left: 0;
   opacity: 0.1;
+}
+
+.section-dark {
+  position: relative;
+  display: flex;
+  color: var(--normal-white);
+  height: 100%;
+
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--bg-dark);
+  overflow: hidden;
 }
 
 .title {
@@ -208,6 +222,15 @@ section {
   line-height: 28.8px;
 }
 
+.secondary-title-dark {
+  color: var(--transparent-white);
+
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Neucha Regular", sans-serif;
+  line-height: 28.8px;
+}
+
 .section-definition {
   font-weight: 400;
   font-size: 34px;
@@ -219,10 +242,24 @@ section {
   width: 100%;
   margin-top: 100px;
   margin-bottom: 20px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  color: var(--normal-white);
 
   background-color: var(--bg-dark);
+}
+
+.section-second-title-dark {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  color: var(--bg-dark);
+
+  background-color: var(--normal-light);
 }
 
 .image-container {
@@ -244,4 +281,14 @@ section {
 .content-container {
   display: flex;
   justify-content: center;
+}
+
+.description-paragraph-right {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.description-paragraph-left {
+  width: 50%;
+  margin-right: 20px;
 }
