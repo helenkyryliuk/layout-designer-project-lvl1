@@ -148,8 +148,8 @@ section {
 .paragraph-title {
   color: var(--primary);
 
-  font-size: 52px;
-  line-height: 62.4px;
+  font-size: 34px;
+  line-height: 40.8px;
   font-family: "Neucha Regular", sans-serif;
 }
 
@@ -158,7 +158,8 @@ section {
 
   width: 350px;
 
-  font-size: 60px;
+  font-size: 52px;
+  line-height: 62.4px;
   font-family: "Neucha Regular", sans-serif;
 
   background-color: var(--normal-brown);
