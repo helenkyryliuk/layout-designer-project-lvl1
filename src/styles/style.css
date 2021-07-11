@@ -70,43 +70,58 @@ section {
   max-width: 1110px;
 }
 
+.header-description {
+  display: flex;
+  justify-content: center;
+
+  max-width: 1110px;
+  margin: 15px 150px;
+}
+
 .section {
   position: relative;
+
   display: flex;
 
-  height: 100%;
-
-  width: 100%;
-  justify-content: center;
   flex-direction: column;
-  background-color: var(--normal-light);
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+
+  background-color: var(--normal-light);
 }
 
 .section::before,
 .section-dark::before {
-  content: "";
-  background-image: url('../assets/images/background.png');
-  background-size: cover;
   position: absolute;
+
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+
+  background-image: url('../assets/images/background.png');
+  background-size: cover;
   opacity: 0.1;
+
+  content: "";
 }
 
 .section-dark {
   position: relative;
+
   display: flex;
-  color: var(--normal-white);
-  height: 100%;
+  flex-direction: column;
+  justify-content: center;
 
   width: 100%;
-  justify-content: center;
-  flex-direction: column;
-  background-color: var(--bg-dark);
+  height: 100%;
   overflow: hidden;
+
+  color: var(--normal-white);
+
+  background-color: var(--bg-dark);
 }
 
 .title {
@@ -118,30 +133,32 @@ section {
 .top-banner-image {
   /* height: 525px; */
   position: relative;
-  width: 75%;
-  right: -465px;
   top: 55px;
+  right: -465px;
+
+  width: 75%;
 }
 
 .flex-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  background-color: var(--normal-brown);
+  justify-content: center;
 
   padding-top: 200px;
   padding-right: 150px;
-  padding-left: 150px;
   padding-bottom: 100px;
+  padding-left: 150px;
 
+  background-color: var(--normal-brown);
 }
 
 .flex-container > div {
   display: flex;
   width: 300px;
-  background-color: var(--normal-light);
   margin: 10px 14px;
   padding: 24px;
+
+  background-color: var(--normal-light);
   cursor: pointer;
 }
 
@@ -149,32 +166,34 @@ section {
   color: var(--primary);
 
   font-size: 34px;
-  line-height: 40.8px;
   font-family: "Neucha Regular", sans-serif;
+  line-height: 40.8px;
 }
 
 .flex-container > .paragraph-title {
+  width: 350px;
+  margin-top: 12px;
+  padding: 0;
+
   color: var(--normal-white);
 
-  width: 350px;
-
   font-size: 52px;
-  line-height: 62.4px;
   font-family: "Neucha Regular", sans-serif;
+  line-height: 62.4px;
 
   background-color: var(--normal-brown);
-  padding: 0;
-  margin-top: 12px;
 }
 
 .btn-primary {
-  background-color: var(--primary);
+  padding: 20px 20px;
+  border: none;
+
   color: var(--normal-white);
   font-weight: 600;
-  padding: 20px 20px;
-  cursor: pointer;
-  border: none;
   font-variant: small-caps;
+
+  background-color: var(--primary);
+  cursor: pointer;
 }
 
 .btn-container {
@@ -312,4 +331,40 @@ section {
 .description-paragraph-left {
   width: 50%;
   margin-right: 20px;
+}
+
+.terms-and-agreement-section {
+  margin-top: 5px;
+
+  font-size: 12px;
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 50px;
+
+  border: none;
+
+  background-color: orange;
+}
+
+.subscription-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 55px;
+
+  color: white;
+
+  background-color: #42413c;
+}
+
+input {
+  width: 420px;
+  height: 50px;
+  padding: 0;
+  border: none;
 }
